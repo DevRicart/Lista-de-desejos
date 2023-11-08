@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de desejos</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Lista de desejos do Ricardo</h1>
+      </div>
+      <nav>
+        <div>
+          <button class="btn-categoria btn" data-categoria="eletronicos">
+            Eletrônicos
+          </button>
+          <button class="btn-categoria btn" data-categoria="vestuario">
+            Vestuário
+          </button>
+          <button class="btn-categoria btn" data-categoria="decoration">
+            Decoração
+          </button>
+          <button id="mostrarTodos" class="btn">Mostrar Todos</button>
+        </div>
+
+        <input
+          type="text"
+          id="barraPesquisa"
+          class="input"
+          placeholder="Pesquisar por nome"
+        />
+      </nav>
+    </header>
+
+    <main>
+      <!--  
+      <div class="produto " data-nome="">
+        <a href="" target="_blank">
+            <div class="produto-image">
+                <img
+                    src="assets"
+                    alt="Produto"
+                >
+            </div>
+                
+            <div class="produto-name">
+                <h2></h2>
+                <div class="produto-bio">
+                    .
+                </div>
+            </div>
+          </a>
+        </div>
+      -->
+
+      <div class="produtos">
+        <div class="produto decoration" data-nome="boneco">
+          <a
+            href="https://brincamundo.com.br/produto/action-figure-venom/"
+            target="_blank"
+          >
+            <div class="produto-image">
+              <img src="assets/boneco.jpeg" alt="Produto" />
+            </div>
+
+            <div class="produto-name">
+              <h2>Action Figure - Venom</h2>
+              <div class="produto-bio">
+                Uma action figure do Venom, pode ser essa ou uma mais bonita.
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="produto eletronicos decoration" data-nome="cabo coiled">
+          <a
+            href="https://pt.aliexpress.com/item/1005005806842673.html?gatewayAdapt=glo2bra"
+            target="_blank"
+          >
+            <div class="produto-image">
+              <img
+                src="https://cdn.sistemawbuy.com.br/arquivos/c902c51ae83717d42e27bcaf6f7b0ddb/produtos/650067f41ca90/mac-apple-macintosh-fotos-produto-3-650067f452c31_mini.jpg"
+                alt="Produto"
+              />
+            </div>
+
+            <div class="produto-name">
+              <h2>Cabo coiled</h2>
+              <div class="produto-bio">
+                Um cabo para teclado, para deixar o setup mais bunito.
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="produto eletronicos decoration" data-nome="relogio digital">
+          <a
+            href="https://pt.aliexpress.com/item/1005005128215469.html?srcSns=sns_WhatsApp&spreadType=socialShare&bizType=ProductDetail&social_params=21239383422&aff_fcid=1ce2c1ad3b074d2bb17a5c00df89b414-1699159393581-06818-_mqWyhAk&tt=MG&aff_fsk=_mqWyhAk&aff_platform=default&sk=_mqWyhAk&aff_trace_key=1ce2c1ad3b074d2bb17a5c00df89b414-1699159393581-06818-_mqWyhAk&shareId=21239383422&businessType=ProductDetail&platform=AE&terminal_id=2a9ec9610e4e494aaa8f71633c50d7fa&afSmartRedirect=y"
+            target="_blank"
+          >
+            <div class="produto-image">
+              <img src="./Assets/relogio.png" alt="Produto" />
+            </div>
+
+            <div class="produto-name">
+              <h2>Relógio de mesa</h2>
+              <div class="produto-bio">
+                Relógio de mesa, seria bom se fosse esse, de preferência preto.
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="produto vestuario" data-nome="camisa botão gengar">
+          <a
+            href="https://shopee.com.br/Camisa-camiseta-social-Pokemon-i.401596603.18515532174?sp_atk=9eaf668b-7657-4a0f-bcab-7680288ed1d7&xptdk=9eaf668b-7657-4a0f-bcab-7680288ed1d7"
+            target="_blank"
+          >
+            <div class="produto-image">
+              <img
+                src="https://down-br.img.susercontent.com/file/sg-11134201-22090-4floogxhvthv57"
+                alt="Produto"
+              />
+            </div>
+
+            <div class="produto-name">
+              <h2>Camisa botão Gengar</h2>
+              <div class="produto-bio">
+                Tem que ser do gengar, seria bom desse vendedor.
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <p id="mensagemSemResultados" style="display: none">
+        Nenhum item com este nome.
+      </p>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
