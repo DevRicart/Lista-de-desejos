@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 /* ======= HEADER ======= */
@@ -14,6 +15,8 @@ header .title {
 header h1 {
   color: white;
   text-align: center;
+
+  padding-top: 20px;
 }
 
 nav {
@@ -53,7 +56,10 @@ img {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: 1000px;
 }
 
 body {
@@ -157,11 +163,6 @@ div.produtos {
 
 .btn:hover {
   scale: 1.1;
-}
-
-
-body {
-  font-family: 'Red Hat Display', sans-serif;
 }
 
 .produto {
